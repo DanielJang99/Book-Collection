@@ -5,7 +5,7 @@ import SigninFormContainer from "../containers/SigninFormContainer";
 export default function Sigin() {
     const token = sessionStorage.getItem("token");
     if (token !== null) {
-        return <Redirect to="/" />;
+        return <Redirect to="/Book-Collection" />;
     }
 
     return (

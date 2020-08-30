@@ -8,19 +8,12 @@ function BooksList({ books, loading, error, getBooks }) {
     return (
         <div>
             {loading && <div>로딩중...</div>}
-            {error !== null && <div>에러다!!</div>}
+            {error !== null && <div>에러</div>}
             {books.map(book => (
                 <li>{book.title}</li>
             ))}
         </div>
     );
 }
-
-// function sleep(ms) {
-//     return new Promise(resolve => {
-//         setTimeout(() => {
-//             resolve();
-//         }, ms);
-//     });
 
 export default BooksList;

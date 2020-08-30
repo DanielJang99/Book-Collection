@@ -13,7 +13,7 @@ function SigninForm({ login, loading, error }) {
                 <button onClick={click}>로그인</button>
             </p>
             {loading && <p>로딩중...</p>}
-            {error !== null && <p>에러!!</p>}
+            {error !== null && <p>에러</p>}
         </div>
     );
     function click() {

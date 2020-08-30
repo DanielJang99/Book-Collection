@@ -7,7 +7,7 @@ export default function withAuth(Component) {
         // console.log("HOC", props);
         const token = sessionStorage.getItem("token");
         if (token === null) {
-            return <Redirect to="/signin" />;
+            return <Redirect to="/Book-Collection/signin" />;
         }
         return <Component {...props} token={token} />;
     }

@@ -7,18 +7,17 @@ import { ErrorBoundary } from "react-error-boundary";
 import Error from "./pages/Error";
 import PersonContext from "./contexts/PersonContext";
 
-const persons = [
-    { name: "Daniel", age: 22 },
-    { name: "Bukayo", age: 20 }
-];
-
 const App = () => (
     <ErrorBoundary FallbackComponent={Error}>
-        <PersonContext.Provider value={persons}>
+        <PersonContext.Provider>
             <BrowserRouter>
                 <Switch>
-                    <Route exact path="/signin" component={Signin} />
-                    <Route exact path="/" component={Home} />
+                    <Route
+                        exact
+                        path="/Book-Collection/signin"
+                        component={Signin}
+                    />
+                    <Route exact path="/Book-Collection" component={Home} />
                     <Route component={NotFound} />
                 </Switch>
             </BrowserRouter>
