@@ -7,3 +7,11 @@
 ## Installation Instructions
 
 이 Repository를 클론하시고 `yarn start` 로 서버를 시작한 다음 `localhost:3000/Book-Collection` 으로 이동하면 됩니다.
+
+SignIn 페이지에서 로그인을 하면 홈 화면에서 유저의 token과 db에 저장된 책 자료를 볼 수 있습니다.
+
+## Screen Shots
+
+<img src="./images/ScreenShot1.png">
+
+<img src="./images/ScreenShot2.png">
